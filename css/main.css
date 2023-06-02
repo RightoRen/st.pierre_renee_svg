@@ -1,0 +1,129 @@
+.hidden {
+    display: none;
+}
+
+  
+.bottle-box {
+    border: solid black 1px;
+     padding: 20px;
+     text-align: center;
+     margin-top: 15px;
+     margin-bottom: 20px;
+   }
+
+body {
+    background-color: bisque;
+    padding: 0 0;
+    margin: 0 0;
+    font-size: 1.5em;
+    font-family: 'Averia Serif Libre', cursive;
+    font-family: 'Calistoga', cursive;
+    font-family: 'Lilita One', cursive;
+}
+
+h1, h2, h3, h4, p {
+    text-decoration: none;
+    color: #270400;
+    margin: 0;
+    padding: 0;
+}
+
+.head-txt {
+    text-align: center;
+    margin-left: 15px;
+}
+
+p {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+div .title-txt {
+    text-align: center;
+}
+
+#BigBottle {
+    width: 53%;
+    height: auto; 
+}
+
+#BigBottle:hover #Liquid {
+    transition: ease-in 0.6s;
+    fill: rgb(119, 35, 54);
+}
+
+#BigBottle #Liquid {
+    transition: ease-out 0.6s;
+    fill: #270400;
+}
+
+#Square {
+    width: 44%;
+    margin-bottom: 10px;
+    height: auto;
+}
+
+#Square:hover {
+    transition: ease-in-out 0.6s;
+    transform: scale(95%);
+}
+
+#Square {
+    transition: ease-out 0.3s;
+    transform: scale(100%);
+}
+
+#Bub {
+    width: 43%;
+    height: auto; 
+}
+
+#Bub:hover {
+    transition: ease 1s;
+    transform: rotate(10deg);
+}
+#Bub {
+    transition: ease-out 1s;
+    transform: rotate(0deg);
+}
+
+#Tall {
+    width: 60%;
+    height: auto; 
+}
+
+#Tall:hover {
+    transition: ease-in 0.6s;
+    animation: rotation 2s linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotateY(0deg);
+      }
+      to {
+        transform: rotateY(30deg);
+      }
+}
+
+#Tall {
+    transition: ease-out 0.6s;
+}
+
+#Small {
+    width: 60%;
+    height: auto; 
+}
+
+#LiqSmall:hover {
+    transition: all ease-in 1s;
+    fill: aqua;
+}
+
+#Medium {
+    width: 60%;
+    height: auto; 
+}
+
