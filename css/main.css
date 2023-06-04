@@ -12,7 +12,7 @@
    }
 
 body {
-    background-color: bisque;
+    background-color: white;
     padding: 0 0;
     margin: 0 0;
     font-size: 1.5em;
@@ -33,20 +33,44 @@ h1, h2, h3, h4, p {
     margin-left: 15px;
 }
 
-p {
+.txt-space {
     margin-top: 20px;
-    margin-bottom: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
+}
+
+h2 {
+    text-decoration: underline;
+    margin-top: 10px;
+    font-size: 2em;
+}
+
+h3 {
+    font-family: 'Lilita One', cursive;
+}
+
+p {
+    font-family: 'Calistoga', cursive;
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 30px;
 }
 
 div .title-txt {
     text-align: center;
 }
 
+div {
+    padding: 0 0;
+    margin: 0 0;
+}
+
 #BigBottle {
     width: 53%;
     height: auto; 
+}
+
+#BigBottle:hover {
+    transition: ease-in 0.7s;
+    filter: drop-shadow(0 0 0.55rem rgb(43, 11, 11));
 }
 
 #BigBottle:hover #Liquid {
@@ -55,28 +79,26 @@ div .title-txt {
 }
 
 #BigBottle #Liquid {
-    transition: ease-out 0.6s;
+    transition: ease-out 0.1s;
     fill: #270400;
 }
 
 #Square {
     width: 44%;
-    margin-bottom: 10px;
     height: auto;
 }
 
 #Square:hover {
     transition: ease-in-out 0.6s;
-    transform: scale(95%);
+    transform: scale(0.7);
 }
 
 #Square {
     transition: ease-out 0.3s;
-    transform: scale(100%);
 }
 
 #Bub {
-    width: 43%;
+    width: 44%;
     height: auto; 
 }
 
@@ -90,40 +112,103 @@ div .title-txt {
 }
 
 #Tall {
-    width: 60%;
+    width: 50%;
     height: auto; 
 }
 
 #Tall:hover {
     transition: ease-in 0.6s;
-    animation: rotation 2s linear;
+    animation: rotation 2s infinite linear;
 }
 
 @keyframes rotation {
     from {
-        transform: rotateY(0deg);
+        transform: rotate(0deg);
       }
       to {
-        transform: rotateY(30deg);
+        transform: rotate(360deg);
+      }
+      from {
+        transform: rotate(0deg);
       }
 }
 
-#Tall {
-    transition: ease-out 0.6s;
+#Tall:hover {
+    transition: ease-out 0.3s;
 }
 
 #Small {
-    width: 60%;
-    height: auto; 
+    width: 53%;
+    margin-top: 34px;
 }
 
-#LiqSmall:hover {
-    transition: all ease-in 1s;
-    fill: aqua;
+#Small:hover #BubMS {
+    animation: bubble-bounce 0.95s linear infinite;
 }
+@keyframes bubble-bounce {
+    20% {
+        transform: translateZ(0);
+    } 
+    40% {
+        transform: translateX(-5px);
+    } 
+    90% {
+        transform: translateZ(-5px);
+    } 
+}
+
+
+#Small:hover {
+    animation: tilt-shaking 1s linear infinite;
+}
+
+@keyframes tilt-shaking {
+    0% { transform: rotate(0); }
+    20% { transform: rotate(5deg); }
+    50% { transform: rotate(0); }
+    70% { transform: rotate(-5deg); }
+    100% { transform: rotate(0); }
+  }
 
 #Medium {
-    width: 60%;
-    height: auto; 
+    width: 53%;
+    margin-top: 20px;
 }
 
+#Medium:hover #StrawM {
+    animation: straw-bounce 1s linear;
+}
+
+@keyframes straw-bounce {
+    20%, 50%, 80%, to {
+        transform: translateY(0);
+    } 
+    40% {
+        transform: translateY(-15px);
+    } 
+    70% {
+        transform: translateY(-6px);
+    } 
+    90% {
+        transform: translateY(-4px);
+    } 
+}
+
+#Medium:hover {
+    animation: bounce 1s linear;
+}
+
+@keyframes bounce {
+    20%, 50%, 80%, to {
+        transform: translateY(0);
+    } 
+    40% {
+        transform: translateY(-25px);
+    } 
+    70% {
+        transform: translateY(-10px);
+    } 
+    90% {
+        transform: translateY(-4px);
+    } 
+}
