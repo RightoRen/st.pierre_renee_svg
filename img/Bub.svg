@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Bub" data-name="Bub" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 111.18 299.94">
-  <g id="Bub">
+<svg id="Bub" data-name="Bub1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 111.18 299.94">
+  <g id="BubGroup">
     <path id="BodyBub" d="m98.58,107.61c-24.57-29.49-21.36-63.24-21.86-85.83h-42.27c-.5,22.6,2.72,56.34-21.86,85.83-29.25,35.1.68,167.01,7.45,189.51h71.09c6.77-22.5,36.7-154.42,7.45-189.51Z" style="fill: #d3ccbe;"/>
     <path id="TopBub" d="m80.23,21.78c0,1.88-1.42,3.4-3.18,3.4h-42.93c-1.76,0-3.18-1.52-3.18-3.4h0c0-1.88,1.42-3.4,3.18-3.4h42.93c1.76,0,3.18,1.52,3.18,3.4h0Z" style="fill: #ce4e28;"/>
     <g id="LidBub">
